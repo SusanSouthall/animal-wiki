@@ -8,10 +8,10 @@
      <script type="text/javascript" src="js/scripts.js">
         <!-- <title>Animal-Wiki</title> -->
         function is_checked() {
-          var cats_checked = document.getElementById("#animals_cats").checked;
-          var dogs_checked = document.getElementById("#animals_dogs").checked;
-          var birds_checked = document.getElementById("#animals_birds").checked;
-            if(cats_checked == false && dogs_checked == false && birds_checked == false) {
+          var cats_checked = document.getElementById("animals_cats").checked;
+          var dogs_checked = document.getElementById("animals_dogs").checked;
+          var birds_checked = document.getElementById("animals_birds").checked;
+            if(cats_checked === false && dogs_checked === false && birds_checked === false) {
               alert("Please choose an option.");
               return false;
             }else{
@@ -23,17 +23,21 @@
     </script>
   </head>
   <body>
+    <form action="submission.html" method="get" onsubmit="return is_checked() ">
+      <p>Which animal would you like to learn about?</p>
+      <input type="radio" name="animals" value="cats" id="animals_cats"/> Cats.<img src="img/loki1.jpg"<br/>
+      <input type="radio" name="animals" value="dogs" id="animals_dogs"/> Dogs. <img src="img/fredrick1.jpg"<br/>
+      <input type="radio" name="animals" value="birds" id="animals_birds"/> Birds. <img src="img/big_bird.jpg"> <br/>
+      <input type="submit" value="submit"/>
 
-     <div class="container">
+     <!-- <div class="container">
        <div class="form-group" id="animals">
          <h2>Let's learn about animals</h2>
          <form action="index.html" method="get" onsubmit="return">
-          <p>Which animal would you like to learn about?</p>
-          <input type="radio" name="animals" value="cats" id="animals_cats"/> Cats<br/>
-          <input type="radio" name="animals" value="dogs" id="animals_dogs"/> Dogs<br/>
-          <input type="radio" name="animals" value="birds" id="animals_birds"/> Birds<br/>
+
+
           <input type="submit" name="Submit" value="submit"/>
-        </form>
+        </form> -->
 
 
 
