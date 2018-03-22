@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/scripts.js">
+        <!-- <title>Animal-Wiki</title> -->
+        function is_checked() {
+          var cats_checked = document.getElementById("#animals_cats").checked;
+          var dogs_checked = document.getElementById("#animals_dogs").checked;
+          var birds_checked = document.getElementById("#animals_birds").checked;
+            if(cats_checked == false && dogs_checked == false && birds_checked == false) {
+              alert("Please choose an option.");
+              return false;
+            }else{
+              return true;
+            }
+
+          }
+
+    </script>
+  </head>
+  <body>
+
+     <div class="container">
+       <div class="form-group" id="animals">
+         <h2>Let's learn about animals</h2>
+         <form action="index.html" method="get" onsubmit="return">
+          <p>Which animal would you like to learn about?</p>
+          <input type="radio" name="animals" value="cats" id="animals_cats"/> Cats<br/>
+          <input type="radio" name="animals" value="dogs" id="animals_dogs"/> Dogs<br/>
+          <input type="radio" name="animals" value="birds" id="animals_birds"/> Birds<br/>
+          <input type="submit" name="Submit" value="submit"/>
+        </form>
+
+
+
+
+
+
+
+
+
+              <!-- <p>Learn about cats <a href="http://www.animalplanet.com/pets/cats/">here</a>.</p>
+            </div>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animals" id="dogs">
+              Dogs
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animals" id="birds">
+              Birds
+            </label> -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+      <!-- <div class="form-group">
+        <h2>Let's learn about animals.</h2>
+        <div id="cat">
+        </div>
+      </div>
+      <div class="form-group">
+        <div id="dog">
+        </div>
+      </div>
+      <div class="form-group">
+        <div id="bird">
+        </div>
+      </div> -->
+
+    </div>
+  </body>
+</html>
